@@ -3,7 +3,7 @@ Container with diagnostic tools for your k8s cluster or you can run it locally f
 it contains:
 - curl
 - jq
-- telnet( busybox-extras)
+- telnet (busybox-extras)
 - dig, nslookup (bind-tools)
 
 Based on alpine:3.9 image.
