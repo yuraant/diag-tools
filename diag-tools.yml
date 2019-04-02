@@ -1,0 +1,16 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: diag-tools
+spec:
+  selector:
+    matchLabels:
+      app: diag-tools
+  template:
+    metadata:
+      labels:
+        app: diag-tools
+    spec:
+      containers:
+      - name: diag-tools
+        image: yabramkin/diag-tools:latest

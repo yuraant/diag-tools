@@ -1,0 +1,16 @@
+#!/bin/bash
+
+DIR=$(pwd)
+MAINTAINER=yabramkin
+NAME=$(basename ${DIR})
+
+
+RUNNING=$(docker ps -a | grep ${NAME} > /dev/null 2>&1; echo $?)   
+
+
+if [ ${RUNNING} -eq 1 ]; then
+	docker run -ti --name ${NAME}  --entrypoint=/bin/bash ${MAINTAINER}/${NAME}:latest
+else
+	docker start ${NAME}
+	docker attach ${NAME}
+fi
