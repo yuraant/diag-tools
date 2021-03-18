@@ -7,7 +7,7 @@ it contains:
 - dig, nslookup (bind-tools)
 - aws-cli
 
-Based on alpine:3.12 image.
+Based on alpine:3.11 image.
 
 ## Requirements
 ####  Use container for k8s
