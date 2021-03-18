@@ -5,12 +5,13 @@ it contains:
 - jq
 - telnet (busybox-extras)
 - dig, nslookup (bind-tools)
+- aws-cli
 
-Based on alpine:3.9 image.
+Based on alpine:3.12 image.
 
 ## Requirements
 ####  Use container for k8s
-You need to have `kubectl` version 1.9.0+
+You need to have `kubectl` version 1.13.0+
 ####   Use container local (docker run)
 You need to have `docker` version 17.02.+ 
 
